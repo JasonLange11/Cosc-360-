@@ -1,6 +1,6 @@
 import './Registration.css'
 
-function App() {
+function Registration() {
   const handleSubmit = (event) => {
     event.preventDefault()
   }
@@ -48,4 +48,4 @@ function App() {
   )
 }
 
-export default App
+export default Registration
