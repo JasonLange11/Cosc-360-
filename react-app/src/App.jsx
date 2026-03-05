@@ -1,34 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const handleSubmit = (event) => {
+    event.preventDefault()
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="page-shell">
+      <main className="registration-card">
+        <header className="brand-banner">
+          <h1>TouchGrassEvents</h1>
+        </header>
+
+        <form className="form-card" onSubmit={handleSubmit}>
+          <section className="field-section">
+            <p className="field-label">Email</p>
+            <div className="input-row">
+              <input type="email" placeholder="Enter your email" />
+              <input type="email" placeholder="Re-Enter your email" />
+            </div>
+          </section>
+
+          <section className="field-section">
+            <p className="field-label">Password</p>
+            <div className="input-row">
+              <input type="password" placeholder="Enter your password" />
+              <input type="password" placeholder="Re-Enter your password" />
+            </div>
+          </section>
+
+          <section className="field-section">
+            <p className="field-label">Nickname</p>
+            <div className="nickname-row">
+              <input type="text" placeholder="Enter your nickname" />
+              <label className="terms-label">
+                <input type="checkbox" />I agree to the Terms of Service
+              </label>
+            </div>
+          </section>
+
+          <button type="submit" className="signup-button">
+            SignUp
+          </button>
+
+          <p className="tagline">TouchGrassEvents: Find events. Get out. Touch grass.</p>
+        </form>
+      </main>
+    </div>
   )
 }
 
