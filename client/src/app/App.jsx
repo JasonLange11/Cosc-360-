@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import { useState } from 'react'
 import './App.css'
-import Header from './components/Header'
-import SearchBar from './components/SearchBar'
-import Footer from './components/Footer'
-import Sidebar from './components/Sidebar'
-import CardDisplay from './components/CardDisplay'
+import Header from '../components/Header'
+import SearchBar from '../components/SearchBar'
+import Footer from '../components/Footer'
+import Sidebar from '../components/Sidebar'
+import CardDisplay from '../components/CardDisplay'
 
 const card1Image = {src:"/src/assets/bookclub.jpg", alt:"A stack of books with the words 'Book Club'"};
 
