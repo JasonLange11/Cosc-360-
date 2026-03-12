@@ -1,8 +1,21 @@
 # Cosc-360-
 Group 7
 
+## Run the project Option 1
 
-## Run on localhost
-- cd react-app
+### Run frontend and backend on localhost 
+- Stay in project root folder
+- npm install
+- npm start
+
+## Run the project Option 2
+
+### Run frontend (client) on localhost
+- cd client
+- npm install
+- npm run dev
+
+### Run backend (server) on localhost
+- cd server
 - npm install
 - npm run dev
