@@ -1,0 +1,8 @@
+{
+  "name": "cosc360group7",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix client && npm install --prefix server",
+    "start": "npx concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\""
+  }
+}
